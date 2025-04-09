@@ -34,8 +34,8 @@
                                         radius that is also used by Windows is 8
             UserAeroCaptionButtons      disables the default window controls buttons (minimize, maximize and
                                         close) so that the user cannot interact with it, do not change this
-                                        to true, if you do'nt want to default windows buttons, they will be
-                                        inivisible but there controls remain, which can be really annoying
+                                        to true, if you don't want the default windows buttons, they will be
+                                        inivisible but their controls remain, which can be really annoying
         -->
         <WindowChrome CaptionHeight="32"
                       ResizeBorderThickness="8"
