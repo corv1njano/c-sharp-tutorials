@@ -1,4 +1,11 @@
-﻿<Window x:Class="CustomTitlebar.MainWindow"
+﻿<!--
+    to keep the default Windows window interactions and behaviour you need to set the
+    WindowStyle to SingleBorderWindow like it is already set below, do not change
+    this property, everything else can be changed the way you prefer, although keep
+    in mind that when you don't want a resizeable window that you also need to set
+    the ResizeBorderThickness to 0 in the WindowChrome
+-->
+<Window x:Class="CustomTitlebar.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -6,22 +13,56 @@
         xmlns:local="clr-namespace:CustomTitlebar"
         mc:Ignorable="d"
         ResizeMode="CanResize"
+        MinHeight="400"
+        MinWidth="550"
         WindowStyle="SingleBorderWindow"
-        Title="Application Name" Height="500" Width="650"
+        Title="Application Name" Height="400" Width="550"
         WindowStartupLocation="CenterScreen">
 
     <WindowChrome.WindowChrome>
+        <!--
+            CaptionHeight               sets height for the new titlebar, this is the window drag area, also
+                                        used for titlebar contextmenu (close, minimize, etc.) and by double
+                                        clicking into that area the window maximizes itself when normal and
+                                        the other way around, grid needs to be 8 units larger than caption
+                                        height in order for it to properly align (I don't know why though)
+            ResizeBorderThickness       sets the resize border for the window, this is the "area" in which a
+                                        user can change the window size on the window borders, for a better
+                                        useability set it to at least 8
+            CornerRadius                sets rounded corners for the window, this feature only applies on
+                                        Windows 11 PCs, other Windows versions will ignore it, the corner
+                                        radius that is also used by Windows is 8
+            UserAeroCaptionButtons      disables the default window controls buttons (minimize, maximize and
+                                        close) so that the user cannot interact with it, do not change this
+                                        to true, if you do'nt want to default windows buttons, they will be
+                                        inivisible but there controls remain, which can be really annoying
+        -->
         <WindowChrome CaptionHeight="32"
                       ResizeBorderThickness="8"
-                      CornerRadius="8"/>
+                      CornerRadius="8"
+                      UseAeroCaptionButtons="False"/>
     </WindowChrome.WindowChrome>
-    
+
+    <!-- ToolTip styles, this can be ignored, removed or changed, do whatevery you want with it -->
+    <Window.Resources>
+        <Style TargetType="ToolTip">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Padding" Value="7,3"/>
+            <Setter Property="BorderBrush" Value="DarkGray"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+    </Window.Resources>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="40"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <!-- Titlebar -->
+        <!-- you can style this section the way you like, you can use the same icons that I used, no license or permission required -->
         <Grid Grid.Row="0"
               Background="#333F4C">
             <Grid>
@@ -49,13 +90,6 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <Rectangle Grid.Column="0"
-                               Fill="Transparent"
-                               Height="28"
-                               VerticalAlignment="Top"
-                               HorizontalAlignment="Right"
-                               Width="22"
-                               WindowChrome.IsHitTestVisibleInChrome="True"/>
                     <StackPanel Orientation="Horizontal"
                             HorizontalAlignment="Right"
                             Grid.Column="1">
@@ -100,8 +134,9 @@
         </Grid>
         
         <!-- Content -->
+        <!-- place your window content in here -->
         <Grid Grid.Row="1">
-            <TextBlock Text="Place Window Content here." FontSize="20" Padding="10"/>
+            
         </Grid>
     </Grid>
 </Window>

@@ -1,0 +1,52 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\corvi\\OneDrive\\Documents\\csharp_repo\\CustomTitlebar\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4A0B45-7C6B-4EFD-B92B-FA07000186DA}|CustomTitlebar\\CustomTitlebar.csproj|c:\\users\\corvi\\onedrive\\documents\\csharp_repo\\customtitlebar\\customtitlebar\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{1B4A0B45-7C6B-4EFD-B92B-FA07000186DA}|CustomTitlebar\\CustomTitlebar.csproj|solutionrelative:customtitlebar\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B4A0B45-7C6B-4EFD-B92B-FA07000186DA}|CustomTitlebar\\CustomTitlebar.csproj|c:\\users\\corvi\\onedrive\\documents\\csharp_repo\\customtitlebar\\customtitlebar\\windowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B4A0B45-7C6B-4EFD-B92B-FA07000186DA}|CustomTitlebar\\CustomTitlebar.csproj|solutionrelative:customtitlebar\\windowhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WindowHelper.cs",
+              "DocumentMoniker": "C:\\Users\\corvi\\OneDrive\\Documents\\csharp_repo\\CustomTitlebar\\CustomTitlebar\\WindowHelper.cs",
+              "RelativeDocumentMoniker": "CustomTitlebar\\WindowHelper.cs",
+              "ToolTip": "C:\\Users\\corvi\\OneDrive\\Documents\\csharp_repo\\CustomTitlebar\\CustomTitlebar\\WindowHelper.cs",
+              "RelativeToolTip": "CustomTitlebar\\WindowHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T22:41:02.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\corvi\\OneDrive\\Documents\\csharp_repo\\CustomTitlebar\\CustomTitlebar\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CustomTitlebar\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\corvi\\OneDrive\\Documents\\csharp_repo\\CustomTitlebar\\CustomTitlebar\\MainWindow.xaml",
+              "RelativeToolTip": "CustomTitlebar\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-04-03T21:59:40.195Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
